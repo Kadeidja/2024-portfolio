@@ -3,7 +3,6 @@
 body{
     box-sizing:border-box;
     position: relative;
-    overflow: hidden;
     /*padding:10px;Valeur de marges intérieurs*/
 }
 section{
@@ -28,6 +27,8 @@ section.titlepartClass{
     margin-left : 1rem;
     margin-bottom: 1rem;
     font-family:Anton , sans-serif;
+    overflow: none;
+
 }
 .titlepartClass{
     flex: 1 0 0%;
@@ -35,11 +36,12 @@ section.titlepartClass{
 .titlePart{
     writing-mode: vertical-rl;
     font-weight: 900;
-    position: relative;
+    position: fixed;
     justify-content: center;
     height: 100%;
     width: auto;
     font-size: 3rem;
+    overflow: none;
 }
 
 section.sidepartClass{
@@ -58,6 +60,11 @@ section.sidepartClass{
 
 .sidepartClass{
     flex: 1 0 0%;
+}
+.sidePart{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 div.subpartClass{
     display: inline-block;

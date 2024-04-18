@@ -6,10 +6,15 @@ function CompositionComponent ({Titlereplacement,Componentsreplacement}){
         <>
         <section className='bigsectionClass'>
         <section className="titlepartClass">
+        <div className="titlePart">
             {Titlereplacement}
+        </div>
         </section>
         <section className="sidepartClass">
-            {Componentsreplacement}
+            <div className="sidePart">
+                {Componentsreplacement} 
+            </div>
+           
         </section>
         </section>
         </>
